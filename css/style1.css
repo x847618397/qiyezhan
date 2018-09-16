@@ -1,0 +1,358 @@
+/* 公共样式 小小屏 */
+/* 顶部开始 */
+top{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+top .con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 80px;
+}
+top .con a .logo{
+    width: 150px;
+    height: 50px;
+}
+top .con .list{
+	height: 80px;
+    display: none;
+}
+top .con .list a{
+	height: 80px;
+	padding-top: 24px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+}
+top .con .list a:nth-child(2){
+	color: #fff;
+	border-top: 6px solid white;
+}
+top .con .icon{
+	width: 30px;
+	position: relative;
+}
+top .con .icon img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+top .con .icon .min-list{
+	width: 140px;
+	height: 0;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	right: 0;
+	top: 25px;
+	transition: all 1.2s;
+}
+top .con .icon .min-list img{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 100px;
+	top: 0;
+	display: none;
+}
+top .con .icon .min-list .zhanwei{
+	width: 140px;
+	height: 55px;
+}
+top .con .icon .min-list .word{
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+
+
+/* banner开始 */
+.banner{
+	width: 100%;
+	height: 240px;
+}
+.banner .picture{
+	width: 100%;
+	height: 100%;
+    margin-top: 80px;
+	background-image: url('../img/about-ground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 内容开始 */
+main{
+	background: #f5f5f5;
+	padding: 30px 0;
+}
+main .container .content {
+	background: #fff;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: calc(100%-100px);
+}
+main .container .head{
+	padding: 15px;
+	border-bottom: 1px solid #999;
+}
+main .container .head h1{
+	font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+}
+main .container .head span{
+	font-size: 16px;
+    color: #a3afb7;
+    font-weight: 300;
+}
+main .container .page{
+	padding: 30px 0;
+	margin-top: 30px;
+	border-top: 1px solid #000;
+}
+main .container .page ul{
+	padding:0 13px;
+	display: flex;
+	justify-content: space-between;
+}
+main .container .page ul li{
+	padding: 9px 15px;
+	border: 1px solid #000;
+	color: #000;
+}
+main .container .page ul .down{
+	width: 200px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+main .container .page ul li:hover{
+	color: #999;
+}
+
+
+.swiper-container{
+	width: 220px;
+    height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 80%;
+    width: 100%;
+    margin-top: 30px;
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+
+
+
+/* 右侧开始 */
+main .container .recommend{
+	background: #fff;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: calc(100%-100px);
+	margin-top: 20px;
+}
+main .container .recommend .inner{
+	padding: 10px;
+}
+main .container .recommend .inner input{
+	height: 36px;
+	width: 100%;
+	border-radius: 18px;
+	border-color: #e4eaec;
+	outline: none;
+	padding: 6px 50px 6px 13px;
+	position: relative;
+	/* background: red; */
+}
+input::-webkit-input-placeholder{
+	color: #76838f;
+}
+main .container .recommed .server {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+main .recommend h3{
+	margin-top: 20px;
+	border-top:1px solid #f0f2f5;
+	margin-bottom: 0;
+	padding-top: 20px;
+	font-size: 16px;
+}
+main .recommend a{
+	text-decoration: none;
+	color: #000;
+}
+main .recommend ul li{
+	padding: 10.5px 17.5px;
+	border: 1px solid #e4eaec;
+	color: #2a333c;
+	border-top: 0;
+}
+main .recommend ul li:hover{
+	color: #999;
+}
+main .recommend ul .top{
+	border-top: 1px solid #e4eaec;
+	margin-top: 10px;
+	border-top-left-radius: .215rem;
+    border-top-right-radius: .215rem;
+}
+/* 内容结束 */
+
+
+
+/*底部开始*/
+footer{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+footer .top{
+	height: 60px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+footer .top .container ul{
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+footer .top .container ul .one{
+	height: 30px;
+	margin-top: 10px;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+}
+footer .top .container ul li i{
+	height: 10px;
+	width: 30px;
+	float: left;
+	color: white;
+}
+footer .top .container ul .one:hover{
+	color: #959595;
+}
+footer .top .container ul .one:hover i{
+	color: #959595;
+}
+footer .bottom{
+	height: 100px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+footer .bottom .container .con{
+	height: 100%;
+	width: 100%;
+}
+footer .bottom .title{
+	height: 60px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+footer .bottom .title p{
+	text-align: center;
+	color: #aaa;
+	font-size: 14px;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+
+
+
+@media screen and (min-width: 768px){
+	
+	main .container .content{
+		width: 73%;
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	main .container .recommend{
+		width: 25%;
+		float: right;
+		margin-left: 10px;
+		margin-right: 0;
+		margin-top: 0;
+	}
+	
+	footer .top .container ul .one{
+		height: 30px;
+		width: 100px;
+		margin-top: 10px;
+		color: white;
+		font-size: 16px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+}
+@media screen and (min-width: 992px){
+	top{
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    top .con .icon{
+        display:none;
+    }
+    top .con .list{
+        display:inline;
+    }
+    .meal ul li:nth-child(1){
+        border-right: none;
+    }
+
+	
+}
+@media screen and (min-width: 1200px){
+	top{
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    top .con .icon{
+        display:none;
+    }
+    top .con .list{
+        display:inline;
+    }
+}
